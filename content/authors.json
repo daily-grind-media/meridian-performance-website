@@ -1,0 +1,9 @@
+{
+  "chance-dyck": {
+    "name": "Chance Dyck",
+    "role": "Founder, Meridian Performance",
+    "about_page": "about",
+    "social": { "facebook": "", "instagram": "", "linkedin": "" },
+    "_note": "Optional personal profile URLs for Chance. Only non-empty values are output (structured data sameAs)."
+  }
+}

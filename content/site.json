@@ -1,0 +1,29 @@
+{
+  "name": "Meridian Performance",
+
+  "base_url": "",
+  "_base_url_note": "PRODUCTION DOMAIN. Leave empty until the domain is connected, then set e.g. \"https://www.yourdomain.com\" (no trailing slash). This one value fills canonical URLs, og:url, og:image, sitemap.xml, robots.txt and all structured-data URLs. You can also pass it at build time: python3 build.py --base-url=https://www.yourdomain.com",
+
+  "locale": "en_US",
+  "default_og_image": { "src": "assets/img/og-image.jpg", "width": 1200, "height": 630, "alt": "Meridian Performance" },
+
+  "business": {
+    "name": "Meridian Performance",
+    "description": "Personalized training, nutrition and accountability coaching with Chance Dyck in Del Mar, CA, and online.",
+    "location_label": "Del Mar, CA",
+    "locality": "Del Mar",
+    "region": "CA",
+    "country": "US",
+    "founder": "chance-dyck",
+    "services": ["1-on-1 Personal Training", "Small Group Training", "Online Coaching"]
+  },
+
+  "social": {
+    "facebook": "",
+    "instagram": "",
+    "linkedin": "",
+    "youtube": ""
+  },
+  "social_order": ["facebook", "instagram", "linkedin"],
+  "_social_note": "Paste each full profile URL (https://...) into social.facebook / social.instagram / social.linkedin. They are used by the footer icons, the Contact page icons and the structured data (sameAs). To add YouTube later: fill social.youtube and add \"youtube\" to social_order."
+}

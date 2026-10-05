@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+{{HEAD}}
+</head>
+<body>
+{{HEADER active="contact"}}
+
+<main id="main">
+  <section class="page-hero" aria-labelledby="contact-title">
+    <div class="page-hero__bg" aria-hidden="true"><img src="{{A}}assets/img/smoke-right.webp" width="312" height="561" alt="" style="width:min(50vw,620px)"></div>
+    <div class="wrap">
+      <p class="crumbs"><a href="{{U:home}}">Home</a><span aria-hidden="true">/</span>Contact</p>
+      <h1 class="h1" id="contact-title" style="margin-top:26px;max-width:14ch;font-size:clamp(2.75rem,6.4vw,6rem)"><span class="metal">Let’s talk about where you</span> <span class="metal-red">want to go.</span></h1>
+      <div class="hero__rule" aria-hidden="true"></div>
+      <p class="body-lg measure reveal" style="margin-top:28px;color:var(--titanium)">The first step is understanding your goals. We’ll talk about where you are now, where you want to be, and whether Meridian Performance is the right coaching fit to help you get there. Send a message or book a consultation below.</p>
+    </div>
+  </section>
+
+  <section class="legal" aria-label="Contact options">
+    <div class="wrap">
+      <div class="contact-grid">
+
+        <div class="embed reveal" id="message">
+          <div class="embed__head">
+            <h2 class="h3">Contact form</h2>
+            <span class="tech caption">Send a message</span>
+          </div>
+          <!--
+            GOHIGHLEVEL FORM EMBED
+            Paste the GoHighLevel form embed code inside .embed__slot below,
+            replacing the placeholder <div class="embed__placeholder">.
+          -->
+          <div class="embed__slot" data-ghl="form">
+            <div class="embed__placeholder">
+              <p>[GoHighLevel form placeholder]</p>
+              <small>The contact form embed will be placed here.</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="embed reveal" data-delay="1" id="book">
+          <div class="embed__head">
+            <h2 class="h3">Book a consultation</h2>
+            <span class="tech caption">Pick a time</span>
+          </div>
+          <!--
+            GOHIGHLEVEL CALENDAR EMBED
+            Paste the GoHighLevel calendar embed code inside .embed__slot below,
+            replacing the placeholder <div class="embed__placeholder">.
+          -->
+          <div class="embed__slot" data-ghl="calendar">
+            <div class="embed__placeholder">
+              <p>[GoHighLevel calendar placeholder]</p>
+              <small>The consultation booking calendar will be placed here.</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-info reveal">
+        <div>
+          <h2>Train in person</h2>
+          <p>{{LOCATION}}</p>
+        </div>
+        <div>
+          <h2>Train online</h2>
+          <p>Online coaching gives you the same structure and direction wherever you train.</p>
+        </div>
+        <div>
+          <h2>What happens first</h2>
+          <p>A conversation about your goals, training history, lifestyle and schedule. No high-pressure sales pitch.</p>
+        </div>
+      </div>
+      {{SOCIAL_ROW}}
+    </div>
+  </section>
+</main>
+
+{{FOOTER}}
+</body>
+</html>

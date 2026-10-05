@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+{{HEAD}}
+<link rel="preload" as="image" href="{{A}}assets/img/hero-1672.webp" imagesrcset="{{A}}assets/img/hero-1100.webp 1100w, {{A}}assets/img/hero-1672.webp 1672w, {{A}}assets/img/hero-2508.webp 2508w" imagesizes="100vw" media="(min-width: 901px) and (min-aspect-ratio: 1/1)">
+<link rel="preload" as="image" href="{{A}}assets/img/hero-mobile.webp" media="(max-width: 900px), (max-aspect-ratio: 1/1)">
+</head>
+<body>
+{{HEADER active="home"}}
+
+<main id="main">
+
+  <!-- ============================== HERO ============================== -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero__media">
+      <picture>
+        <source media="(max-width: 900px), (max-aspect-ratio: 1/1)" srcset="{{A}}assets/img/hero-mobile.webp" width="880" height="901">
+        <img src="{{A}}assets/img/hero-1672.webp" srcset="{{A}}assets/img/hero-1100.webp 1100w, {{A}}assets/img/hero-1672.webp 1672w, {{A}}assets/img/hero-2508.webp 2508w" sizes="100vw" width="1672" height="941" fetchpriority="high" decoding="async" alt="Chance Dyck, founder of Meridian Performance, standing with arms crossed in front of the Meridian symbol and a mountain range.">
+      </picture>
+    </div>
+    <div class="hero__shade" aria-hidden="true"></div>
+
+    <div class="hero__inner">
+      <div class="hero__content">
+        <p class="hero__eyebrow"><span>Fitness</span><i aria-hidden="true">|</i><span>Nutrition</span><i aria-hidden="true">|</i><span>Accountability</span></p>
+        <h1 class="h1 hero__title" id="hero-title">
+          <span class="line"><span class="metal">Discipline</span></span>
+          <span class="line"><span class="metal-red">Builds</span></span>
+          <span class="line"><span class="metal">Freedom</span></span>
+        </h1>
+        <div class="hero__rule" aria-hidden="true"></div>
+        <p class="hero__copy">Personalized coaching to help you get stronger, leaner and more in control of your life.</p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="{{U:contact}}">Work With Me {{ICON arrow}}</a>
+        </div>
+        <ul class="hero__pillars">
+          <li class="pillar">{{ICON bars}}<div><b>BUILD</b><span>Real, measurable progress</span></div></li>
+          <li class="pillar">{{ICON fuel}}<div><b>FUEL</b><span>Better habits for life</span></div></li>
+          <li class="pillar">{{ICON target}}<div><b>STAY</b><span>Accountable to a higher standard</span></div></li>
+        </ul>
+      </div>
+    </div>
+    <a class="hero__scroll" href="#philosophy">Scroll</a>
+  </section>
+
+  <!-- ========================= PHILOSOPHY / TRANSITION ========================= -->
+  <section class="section philosophy" id="philosophy" aria-labelledby="philosophy-title">
+    <div class="philosophy__bg" aria-hidden="true">
+      <img src="{{A}}assets/img/terrain-left.webp" width="820" height="661" alt="" loading="lazy">
+      <img class="smoke" src="{{A}}assets/img/smoke-right.webp" width="312" height="561" alt="" loading="lazy">
+    </div>
+    <div class="philosophy__ghost" aria-hidden="true">Meridian</div>
+    <div class="wrap">
+      <div class="philosophy__grid">
+        <div class="philosophy__meta reveal">
+          <p class="eyebrow eyebrow--rule">Meridian Performance</p>
+          <p class="philosophy__place">{{LOCATION}}</p>
+        </div>
+        <div>
+          <h2 class="philosophy__statement" id="philosophy-title">
+            <span class="w">Your</span> <span class="w">potential</span> <span class="w">isn’t</span> <span class="w red">generic.</span><br>
+            <span class="w">Your</span> <span class="w">coaching</span> <span class="w">shouldn’t</span> <span class="w">be</span> <span class="w red">either.</span>
+          </h2>
+          <div class="philosophy__body reveal">
+            <div>
+              <p class="body-lg muted">Meridian Performance brings personalized training, nutrition, structure and accountability together into one coaching system, built around you: your goals, your schedule and your life.</p>
+              <ul class="philosophy__pills" aria-label="What coaching includes">
+                <li>Training</li><li>Nutrition</li><li>Structure</li><li>Accountability</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== COACHING ============================== -->
+  <section class="section coaching" id="coaching" aria-labelledby="coaching-title">
+    <div class="wrap">
+      <div class="coaching__head">
+        <div class="section-head reveal">
+          <p class="eyebrow eyebrow--rule">Coaching</p>
+          <h2 class="h2" id="coaching-title">Built around you.</h2>
+        </div>
+        <p class="body-lg muted reveal" data-delay="1">Three ways to train with Meridian Performance. Choose the level of support that fits your goals, your schedule and the way you like to train.</p>
+      </div>
+
+      <div class="services">
+        <!-- SERVICE 01 -->
+        <article class="service is-open reveal">
+          <div class="service__bg" aria-hidden="true"><img src="{{A}}assets/img/smoke-right.webp" width="312" height="561" alt="" loading="lazy"></div>
+          <h3>
+            <button class="service__trigger" type="button" aria-expanded="true" aria-controls="svc-1" id="svc-1-btn">
+              <span class="service__num" aria-hidden="true">01</span>
+              <span class="service__titles">
+                <span class="service__label">Service 01 · In person</span>
+                <span class="service__title">1-on-1 Personal Training</span>
+                <span class="service__lead">Personalized, hands-on coaching in {{LOCATION}}.</span>
+              </span>
+              <span class="service__icon" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="service__panel" id="svc-1" role="region" aria-labelledby="svc-1-btn">
+            <div>
+              <div class="service__content">
+                <div class="service__desc">
+                  <p>Your training is built around your goals, experience, movement ability, schedule, and lifestyle, not a generic workout template.</p>
+                  <p>Beyond our sessions, you’ll receive the structure and accountability needed to keep making progress outside the gym, including programming, nutrition guidance, progress tracking, and regular check-ins.</p>
+                  <p class="service__cta"><a class="btn btn--primary btn--sm" href="{{U:contact}}" aria-label="Get started with 1-on-1 Personal Training">Get Started {{ICON arrow}}</a><span class="service__cta-for">1-on-1 Personal Training</span></p>
+                </div>
+                <div class="service__aside">
+                  <div class="bestfor">
+                    <h4>Best for</h4>
+                    <p>Someone who wants the highest level of individualized coaching, accountability, and hands-on support.</p>
+                  </div>
+                  <div class="tags"><span class="tag">In person · {{LOCATION}}</span><span class="tag">Programming</span><span class="tag">Nutrition guidance</span><span class="tag">Check-ins</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- SERVICE 02 -->
+        <article class="service reveal">
+          <div class="service__bg" aria-hidden="true"><img src="{{A}}assets/img/terrain-left.webp" width="820" height="661" alt="" loading="lazy"></div>
+          <h3>
+            <button class="service__trigger" type="button" aria-expanded="false" aria-controls="svc-2" id="svc-2-btn">
+              <span class="service__num" aria-hidden="true">02</span>
+              <span class="service__titles">
+                <span class="service__label">Service 02 · Small group</span>
+                <span class="service__title">Small Group Training</span>
+                <span class="service__lead">Get the structure and coaching of personal training with the energy and community of training alongside others.</span>
+              </span>
+              <span class="service__icon" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="service__panel" id="svc-2" role="region" aria-labelledby="svc-2-btn">
+            <div>
+              <div class="service__content">
+                <div class="service__desc">
+                  <p>Small groups are intentionally capped so you’re still being coached—not disappearing into the back of a crowded fitness class. Sessions combine strength, conditioning, movement, and progressive training in a welcoming environment.</p>
+                  <p class="service__cta"><a class="btn btn--primary btn--sm" href="{{U:contact}}" aria-label="Get started with Small Group Training">Get Started {{ICON arrow}}</a><span class="service__cta-for">Small Group Training</span></p>
+                </div>
+                <div class="service__aside">
+                  <div class="bestfor">
+                    <h4>Best for</h4>
+                    <p>Someone who wants professional coaching and accountability at a more accessible price point while enjoying the motivation of a community.</p>
+                  </div>
+                  <div class="tags"><span class="tag">Capped groups</span><span class="tag">Strength</span><span class="tag">Conditioning</span><span class="tag">Movement</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- SERVICE 03 -->
+        <article class="service reveal">
+          <div class="service__bg" aria-hidden="true"><img src="{{A}}assets/img/smoke-right.webp" width="312" height="561" alt="" loading="lazy"></div>
+          <h3>
+            <button class="service__trigger" type="button" aria-expanded="false" aria-controls="svc-3" id="svc-3-btn">
+              <span class="service__num" aria-hidden="true">03</span>
+              <span class="service__titles">
+                <span class="service__label">Service 03 · Remote</span>
+                <span class="service__title">Online Coaching</span>
+                <span class="service__lead">Personalized coaching wherever you train.</span>
+              </span>
+              <span class="service__icon" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="service__panel" id="svc-3" role="region" aria-labelledby="svc-3-btn">
+            <div>
+              <div class="service__content">
+                <div class="service__desc">
+                  <p>You’ll receive a customized training program, nutrition guidance, accountability, progress tracking, regular check-ins, and ongoing coaching to help you stay consistent and make adjustments as life changes.</p>
+                  <p>This isn’t simply a PDF of workouts. It’s a coaching relationship designed to give you the same structure and direction behind Meridian Performance without needing to live in San Diego.</p>
+                  <p class="service__cta"><a class="btn btn--primary btn--sm" href="{{U:contact}}" aria-label="Get started with Online Coaching">Get Started {{ICON arrow}}</a><span class="service__cta-for">Online Coaching</span></p>
+                </div>
+                <div class="service__aside">
+                  <div class="bestfor">
+                    <h4>Best for</h4>
+                    <p>Busy professionals who want a clear plan and ongoing accountability but don’t need an in-person trainer beside them.</p>
+                  </div>
+                  <div class="tags"><span class="tag">Train anywhere</span><span class="tag">Custom program</span><span class="tag">Progress tracking</span><span class="tag">Check-ins</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ THE MERIDIAN METHOD ============================ -->
+  <section class="section method" id="method" aria-labelledby="method-title">
+    <div class="wrap">
+      <div class="method__grid">
+        <div class="method__aside">
+          <div class="section-head reveal">
+            <p class="eyebrow eyebrow--rule">The Meridian Method</p>
+            <h2 class="h2" id="method-title">A clear path from where you are to where you want to be.</h2>
+          </div>
+          <div class="dial-wrap reveal" data-delay="1" aria-hidden="true">
+            <div class="dial">
+              <svg viewBox="0 0 200 200">
+                <circle cx="100" cy="100" r="92" fill="none" stroke="rgba(217,217,217,.14)" stroke-width="1"/>
+                <circle cx="100" cy="100" r="78" fill="none" stroke="rgba(217,217,217,.08)" stroke-width="10" stroke-dasharray="1 5.81"/>
+                <path d="M 47 47 A 75 75 0 0 1 86 26" fill="none" stroke="#1A56B8" stroke-width="3"/>
+                <path d="M 114 26 A 75 75 0 0 1 153 47" fill="none" stroke="#1A56B8" stroke-width="3"/>
+                <path d="M 153 153 A 75 75 0 0 1 114 174" fill="none" stroke="#1A56B8" stroke-width="3" opacity=".5"/>
+                <path d="M 86 174 A 75 75 0 0 1 47 153" fill="none" stroke="#1A56B8" stroke-width="3" opacity=".5"/>
+                <rect class="dial__mark on" x="94" y="2" width="12" height="12" transform="rotate(45 100 8)"/>
+                <rect class="dial__mark" x="186" y="94" width="12" height="12" transform="rotate(45 192 100)"/>
+                <rect class="dial__mark" x="94" y="186" width="12" height="12" transform="rotate(45 100 192)"/>
+                <rect class="dial__mark" x="2" y="94" width="12" height="12" transform="rotate(45 8 100)"/>
+                <text x="100" y="34" text-anchor="middle" class="dial__lbl">01</text>
+                <text x="170" y="104" text-anchor="middle" class="dial__lbl">02</text>
+                <text x="100" y="174" text-anchor="middle" class="dial__lbl">03</text>
+                <text x="30" y="104" text-anchor="middle" class="dial__lbl">04</text>
+                <g class="dial__needle">
+                  <polygon points="100,18 108,100 100,112 92,100" fill="#E10606"/>
+                  <polygon points="100,112 106,104 100,160 94,104" fill="#6B7278" opacity=".6"/>
+                  <circle cx="100" cy="100" r="5" fill="#0A0A0A" stroke="#D9D9D9" stroke-width="1.5"/>
+                </g>
+              </svg>
+            </div>
+            <div class="dial__readout">
+              <span class="count">STEP <b>01</b> / 04</span>
+              <span class="name">Discover</span>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <nav class="stepper" aria-label="Method steps">
+            <a href="#step-1" class="is-active" aria-current="step">01</a>
+            <a href="#step-2">02</a>
+            <a href="#step-3">03</a>
+            <a href="#step-4">04</a>
+          </nav>
+          <div class="steps">
+            <span class="steps__rail" aria-hidden="true"><span class="steps__fill"></span></span>
+            <ol>
+
+            <li class="step is-active" id="step-1" data-name="Discover">
+              <span class="step__marker" aria-hidden="true"></span>
+              <div class="step__top"><span class="step__num" aria-hidden="true">01</span><span class="step__label">Step 01 of 04</span></div>
+              <h3 class="step__title"><span class="h3">Discover</span></h3>
+              <p class="step__lead">It starts with a conversation.</p>
+              <div class="step__body">
+                <p>Before recommending anything, I want to understand you.</p>
+                <p>We’ll talk about your goals, training history, lifestyle, schedule, nutrition, previous successes and struggles, and most importantly, what has prevented you from getting where you want to go on your own.</p>
+                <p>This isn’t a high-pressure sales pitch. It’s an opportunity for us to determine what you actually need and whether Meridian Performance is the right fit to help you get there.</p>
+              </div>
+            </li>
+
+            <li class="step" id="step-2" data-name="Assess">
+              <span class="step__marker" aria-hidden="true"></span>
+              <div class="step__top"><span class="step__num" aria-hidden="true">02</span><span class="step__label">Step 02 of 04</span></div>
+              <h3 class="step__title"><span class="h3">Assess</span></h3>
+              <p class="step__lead">Understand the starting point.</p>
+              <div class="step__body">
+                <p>If we’re meeting in person, we’ll establish objective baselines through tools such as body-composition measurements and a movement assessment.</p>
+                <p>We’ll look at how you move, where you’re strong, where limitations exist, and what your current fitness level looks like.</p>
+                <p>Instead of guessing what you need, we establish a starting point we can build from.</p>
+              </div>
+            </li>
+
+            <li class="step" id="step-3" data-name="Build">
+              <span class="step__marker" aria-hidden="true"></span>
+              <div class="step__top"><span class="step__num" aria-hidden="true">03</span><span class="step__label">Step 03 of 04</span></div>
+              <h3 class="step__title"><span class="h3">Build</span></h3>
+              <p class="step__lead">Create your roadmap.</p>
+              <div class="step__body">
+                <p>Once we understand where you are and where you want to go, we build the system around you.</p>
+                <p>That can include your personalized training plan, nutrition targets and habits, weekly schedule, accountability structure, progress metrics, and resources to make execution easier in the real world.</p>
+                <p>The goal isn’t to create the theoretically perfect plan.</p>
+                <p class="step__statement">It’s to create the best plan you can consistently follow.</p>
+              </div>
+            </li>
+
+            <li class="step" id="step-4" data-name="Coach &amp; Adjust">
+              <span class="step__marker" aria-hidden="true"></span>
+              <div class="step__top"><span class="step__num" aria-hidden="true">04</span><span class="step__label">Step 04 of 04</span></div>
+              <h3 class="step__title"><span class="h3">Coach, Measure &amp; Adjust</span></h3>
+              <p class="step__lead">Execution is where coaching actually begins.</p>
+              <div class="step__body">
+                <p>From your first training session forward, we’ll work through the plan together while tracking progress and making adjustments based on your results.</p>
+                <p>You’ll learn proper technique, understand why you’re doing what you’re doing, develop confidence in the gym, and receive consistent accountability outside of it.</p>
+                <p>Through regular check-ins, progress reviews, and ongoing communication, we continue asking:</p>
+                <ul class="questions">
+                  <li><span aria-hidden="true"></span>What’s working?</li>
+                  <li><span aria-hidden="true"></span>What’s not?</li>
+                  <li><span aria-hidden="true"></span>What needs to change?</li>
+                </ul>
+                <p class="step__statement">Your program evolves as you do.</p>
+              </div>
+            </li>
+          </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== REVIEWS ============================== -->
+  <section class="section reviews" id="results" aria-labelledby="results-title">
+    <div class="wrap">
+      <div class="reviews__head">
+        <div class="section-head reveal">
+          <p class="eyebrow eyebrow--rule">Results</p>
+          <h2 class="h2" id="results-title">In their own words.</h2>
+        </div>
+        <p class="source reveal" data-delay="1">{{STARS}} Google reviews</p>
+      </div>
+
+      <!-- Featured review -->
+      <article class="featured reveal" aria-label="Review from Makayla E.">
+        <div>
+          <div class="quote-mark" aria-hidden="true">“</div>
+          {{STARS}}
+          <blockquote class="featured__quote">
+            <p>I came into this wanting to lose weight and get stronger, but I ended up gaining so much more confidence and learning a lot about nutrition along the way.</p>
+          </blockquote>
+          <div class="reviewer">
+            <span class="reviewer__avatar" aria-hidden="true">M</span>
+            <div><div class="reviewer__name">Makayla E.</div><div class="reviewer__meta">Google review · 5 stars</div></div>
+          </div>
+          <details class="full">
+            <summary>Read Makayla’s full review</summary>
+            <div class="full__text">
+              <p>Working with Chance has been such a great experience! Chance is an amazing coach who genuinely wants to help you meet your goals, gain confidence, and become the best version of yourself! I came into this wanting to lose weight and get stronger, but I ended up gaining so much more confidence and learning a lot about nutrition along the way. Having a structured workout and nutrition plan made it so much easier to stay consistent, and having someone there to push and motivate me made a huge difference. Chance was always there when I needed him and made me feel supported and accountable.</p>
+              <p>In just 3 months, I lost 16 lbs and 7% body fat while gaining over 10 lbs of muscle! As a vegetarian, I was also worried about hitting my protein goal, but he helped make it feel realistic and achievable. I’m so proud of the progress I’ve made and honestly feel so much healthier overall. I’m so thankful for all of his guidance, accountability, and encouragement. I would definitely recommend him to anyone looking for a coach who genuinely cares about helping you reach your goals!</p>
+            </div>
+          </details>
+        </div>
+        <aside class="result" aria-label="Makayla’s reported results">
+          <p class="result__label">Makayla’s reported results · 3 months</p>
+          <div class="result__row"><b>16 lbs</b><span>Lost</span></div>
+          <div class="result__row"><b>7%</b><span>Body fat lost</span></div>
+          <div class="result__row"><b>10+ lbs</b><span>Muscle gained</span></div>
+          <p class="result__note">As reported by Makayla E. in her Google review. This is one client’s experience. Individual results vary and are not guaranteed.</p>
+        </aside>
+      </article>
+
+      <!-- Secondary reviews -->
+      <div class="slider reveal" data-delay="1">
+        <div class="slider__track" tabindex="0" aria-label="More Google reviews" role="region">
+          <article class="rcard">
+            {{STARS}}
+            <blockquote class="rcard__quote"><p>“He pays attention to the details, knows when to push you, and makes sure every workout is productive.”</p></blockquote>
+            <div class="reviewer"><span class="reviewer__avatar" aria-hidden="true">K</span><div><div class="reviewer__name">Kevin Lee</div><div class="reviewer__meta">Local Guide · Google review</div></div></div>
+            <details class="full">
+              <summary>Full review</summary>
+              <div class="full__text"><p>Chance at Meridian Performance is an excellent trainer! He’s extremely knowledgeable and knows how to make every session challenging while still keeping safety and proper technique a priority. He pays attention to the details, knows when to push you, and makes sure every workout is productive. Highly recommend Chance to anyone looking for a knowledgeable trainer who truly cares about helping his clients improve!</p></div>
+            </details>
+          </article>
+
+          <article class="rcard">
+            {{STARS}}
+            <blockquote class="rcard__quote"><p>“I really appreciated how he started with a detailed intake, took the time to understand my goals, and then walked me through physical assessments before jumping into exercises.”</p></blockquote>
+            <div class="reviewer"><span class="reviewer__avatar" aria-hidden="true">K</span><div><div class="reviewer__name">Kawakita Maki</div><div class="reviewer__meta">Google review</div></div></div>
+            <details class="full">
+              <summary>Full review</summary>
+              <div class="full__text"><p>Chance has a very thoughtful and thorough approach to personal training. I really appreciated how he started with a detailed intake, took the time to understand my goals, and then walked me through physical assessments before jumping into exercises. It gave me a much clearer understanding of where I am now and what the roadmap forward could look like. He’s knowledgeable, attentive, and makes the whole process feel very personalized. Highly recommend Chance!</p></div>
+            </details>
+          </article>
+
+          <article class="rcard">
+            {{STARS}}
+            <blockquote class="rcard__quote"><p>“I am already very fit but Chance showed me how to push my limits.”</p></blockquote>
+            <div class="reviewer"><span class="reviewer__avatar" aria-hidden="true">B</span><div><div class="reviewer__name">Bahram Panbehi</div><div class="reviewer__meta">Google review</div></div></div>
+            <details class="full">
+              <summary>Full review</summary>
+              <div class="full__text"><p>Personal Trainer Chance is a beast! I have nothing but good things to say about him. He is a master of his trait, thoughtful, and very respectful. I am already very fit but Chance showed me how to push my limits. I attended a group class with him and I walked out sweating, sore, and feeling amazing. It didn’t take much convincing to sign up for 1:1 personal training.</p></div>
+            </details>
+          </article>
+
+          <article class="rcard">
+            {{STARS}}
+            <blockquote class="rcard__quote"><p>“Have worked with Coach Chance who’s highly knowledgeable and clearly has a passion for what he does—it shows in his work ethic.”</p></blockquote>
+            <div class="reviewer"><span class="reviewer__avatar" aria-hidden="true">M</span><div><div class="reviewer__name">Michael Popov</div><div class="reviewer__meta">Local Guide · Google review</div></div></div>
+            <details class="full">
+              <summary>Full review</summary>
+              <div class="full__text"><p>Wonderful underground facility with everything you need. Have worked with Coach Chance who’s highly knowledgeable and clearly has a passion for what he does—it shows in his work ethic. This gym is dedicated to the craft &amp; has an on-site chiropractor / physical therapist. Highly recommend whether you prefer solo or group sessions. Daily Grind Media also on site—they specialize in high quality digital marketing—all with stellar vibes.</p></div>
+            </details>
+          </article>
+        </div>
+        <div class="slider__bar">
+          <span class="slider__count" aria-hidden="true">01 / 04</span>
+          <div class="slider__progress" aria-hidden="true"><i></i></div>
+          <div class="slider__btns">
+            <button class="slider__btn slider__btn--prev" type="button" aria-label="Previous reviews">{{ICON arrow-left}}</button>
+            <button class="slider__btn slider__btn--next" type="button" aria-label="Next reviews">{{ICON arrow}}</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== FINAL CTA ============================== -->
+  <section class="cta" aria-labelledby="cta-title">
+    <div class="cta__bg" aria-hidden="true"><img src="{{A}}assets/img/summit.webp" width="1640" height="661" alt="" loading="lazy"></div>
+    <img class="cta__mark" src="{{A}}assets/img/logo-icon-lg.webp" width="658" height="653" alt="" aria-hidden="true" loading="lazy">
+    <div class="wrap cta__inner">
+      <div class="cta__needle reveal" aria-hidden="true"></div>
+      <p class="eyebrow reveal">The next step</p>
+      <h2 class="cta__title reveal" id="cta-title">Ready to build your <span class="red">next level?</span></h2>
+      <p class="cta__copy body-lg reveal" data-delay="1">It starts with a conversation about your goals and what has held you back. From there, we decide together whether Meridian Performance is the right fit.</p>
+      <div class="cta__btns reveal" data-delay="2">
+        <a class="btn btn--primary" href="{{U:contact}}">Get Started {{ICON arrow}}</a>
+        <a class="btn btn--ghost" href="{{U:about}}">Learn About Chance</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+{{FOOTER}}
+</body>
+</html>

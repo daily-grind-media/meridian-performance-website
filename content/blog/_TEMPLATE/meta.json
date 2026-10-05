@@ -1,0 +1,23 @@
+{
+  "_comment": "Copy this folder to content/blog/<your-article-slug>/ (the folder name becomes the URL /blog/<slug>/). Set status to 'published' when ready; 'draft' is never built.",
+  "status": "draft",
+  "featured": false,
+  "title": "",
+  "deck": "",
+  "category": "training",
+  "excerpt": "",
+  "date": "YYYY-MM-DD",
+  "updated": "",
+  "author": "chance-dyck",
+  "hero": {
+    "src": "assets/img/blog/<slug>/hero.webp",
+    "thumb": "assets/img/blog/<slug>/hero-thumb.webp",
+    "alt": "",
+    "caption": ""
+  },
+  "seo": {
+    "title": "",
+    "description": "",
+    "og_image": ""
+  }
+}
