@@ -396,7 +396,7 @@ def load_articles():
         m["body"] = body_path.read_text() if body_path.exists() else ""
         m["minutes"] = reading_minutes(m["body"])
         if status == "published":
-            for field in ("title", "category", "excerpt", "date", "author", "hero"):
+            for field in ("title", "category", "excerpt", "date", "author"):  # hero image is optional
                 if not m.get(field):
                     WARNINGS.append(f"{folder.name}: published article missing '{field}'")
             if not (m.get("seo") or {}).get("description"):
@@ -453,8 +453,11 @@ def preview_card(a, out_path, variant="row", heading="h3"):
     """Reusable article preview component."""
     href = url("article:" + a["slug"], out_path)
     cat = CAT_NAME.get(a.get("category"), "")
-    return f'''<article class="post post--{variant}" data-category="{esc(a.get("category"))}">
-  <a class="post__media" href="{href}" tabindex="-1" aria-hidden="true"><img src="{thumb_src(a, out_path)}" alt="" width="900" height="600" loading="lazy" decoding="async"></a>
+    has_img = bool((a.get("hero") or {}).get("src"))
+    media = (f'<a class="post__media" href="{href}" tabindex="-1" aria-hidden="true"><img src="{thumb_src(a, out_path)}" alt="" width="900" height="600" loading="lazy" decoding="async"></a>'
+             if has_img else "")
+    return f'''<article class="post post--{variant}{"" if has_img else " post--noimg"}" data-category="{esc(a.get("category"))}">
+  {media}
   <div class="post__body">
     <p class="post__cat"><span>{esc(cat)}</span>{demo_badge(a)}</p>
     <{heading} class="post__title"><a href="{href}">{esc(a["title"])}</a></{heading}>
@@ -493,10 +496,12 @@ def build_blog_index(arts):
     feat_html = ""
     if featured:
         href = url("article:" + featured["slug"], out_path)
-        feat_html = f'''<article class="feature reveal" data-category="{esc(featured.get("category"))}" aria-labelledby="feature-title">
-        <a class="feature__media" href="{href}" tabindex="-1" aria-hidden="true">
+        feat_img = bool((featured.get("hero") or {}).get("src"))
+        feat_media = (f'''<a class="feature__media" href="{href}" tabindex="-1" aria-hidden="true">
           <img {img_attrs(featured, out_path, "(max-width: 960px) 100vw, 60vw")} alt="" width="1600" height="900" decoding="async">
-        </a>
+        </a>''' if feat_img else "")
+        feat_html = f'''<article class="feature{"" if feat_img else " feature--text"} reveal" data-category="{esc(featured.get("category"))}" aria-labelledby="feature-title">
+        {feat_media}
         <div class="feature__panel">
           <p class="feature__kicker"><span class="feature__label">Featured</span><span class="post__cat"><span>{esc(CAT_NAME.get(featured.get("category"), ""))}</span>{demo_badge(featured)}</span></p>
           <h3 class="feature__title" id="feature-title"><a href="{href}">{esc(featured["title"])}</a></h3>
@@ -631,6 +636,12 @@ def build_article(a, arts):
     hero = a.get("hero") or {}
     cap = hero.get("caption")
     body = render_markers(a["body"], out_path, key)
+    hero_html = ""
+    if hero.get("src"):
+        hero_html = (f'''<figure class="article-hero">
+      <div class="article-hero__frame"><img {img_attrs(a, out_path, "(max-width: 640px) 100vw, 92vw")} alt="{esc(hero.get("alt"))}" width="1600" height="900" fetchpriority="high" decoding="async"></div>
+      {f'<figcaption>{esc(cap)}</figcaption>' if cap else ""}
+    </figure>''')
     cat = CAT_NAME.get(a.get("category"), "")
 
     related = related_for(a, arts)
@@ -689,10 +700,7 @@ def build_article(a, arts):
         </div>
       </div>
     </header>
-    <figure class="article-hero">
-      <div class="article-hero__frame"><img {img_attrs(a, out_path, "(max-width: 640px) 100vw, 92vw")} alt="{esc(hero.get("alt"))}" width="1600" height="900" fetchpriority="high" decoding="async"></div>
-      {f'<figcaption>{esc(cap)}</figcaption>' if cap else ""}
-    </figure>
+    {hero_html}
     <div class="prose">
 {body}
     </div>
