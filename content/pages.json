@@ -1,45 +1,53 @@
 {
   "_note": "One entry per static page. 'route' is the URL folder. 'index': false adds noindex and keeps the page out of sitemap.xml. A future service page (e.g. /personal-training/) only needs a new entry here plus a template in src/.",
   "home": {
-    "template": "index.html", "route": "",
+    "template": "index.html",
+    "route": "",
     "title": "Meridian Performance | Personal Training & Online Coaching in Del Mar, CA",
     "description": "Personalized training, nutrition and accountability coaching with Chance Dyck. In-person coaching in Del Mar, CA, and online coaching wherever you train.",
-    "index": true, "schema": "home"
+    "index": true,
+    "schema": "home"
   },
   "about": {
-    "template": "about.html", "route": "about/",
+    "template": "about.html",
+    "route": "about/",
     "title": "About Chance Dyck | Meridian Performance, Del Mar, CA",
     "description": "Chance Dyck is the founder of Meridian Performance and a private personal trainer in Del Mar, CA. The story and philosophy behind the Meridian name.",
-    "index": true, "schema": "about"
+    "index": true,
+    "schema": "about"
   },
   "contact": {
-    "template": "contact.html", "route": "contact/",
+    "template": "contact.html",
+    "route": "contact/",
     "title": "Get Started | Contact Meridian Performance",
     "description": "Start a conversation with Chance Dyck about your goals and whether Meridian Performance is the right coaching fit. Send a message or book a consultation.",
-    "index": true, "schema": "contact"
+    "index": true,
+    "schema": "contact"
   },
   "privacy": {
-    "template": "privacy.html", "route": "privacy/",
+    "template": "privacy.html",
+    "route": "privacy/",
     "title": "Privacy Policy | Meridian Performance",
     "description": "Privacy Policy for Meridian Performance.",
-    "index": false,
-    "_index_note": "Set index to true once the policy content has been added."
+    "index": true
   },
   "terms": {
-    "template": "terms.html", "route": "terms/",
+    "template": "terms.html",
+    "route": "terms/",
     "title": "Terms of Service | Meridian Performance",
     "description": "Terms of Service for Meridian Performance.",
-    "index": false,
-    "_index_note": "Set index to true once the terms content has been added."
+    "index": true
   },
   "blog": {
     "route": "blog/",
     "title": "Meridian Insights | Training & Nutrition Blog | Meridian Performance",
     "description": "Training, nutrition, mindset and practical strategies to help you make better decisions and keep moving forward.",
-    "index": true, "schema": "blog"
+    "index": true,
+    "schema": "blog"
   },
   "404": {
-    "template": "404.html", "route": "404.html",
+    "template": "404.html",
+    "route": "404.html",
     "title": "Page Not Found | Meridian Performance",
     "description": "The page you were looking for could not be found.",
     "index": false
