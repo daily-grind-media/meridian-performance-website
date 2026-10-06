@@ -780,3 +780,10 @@ a.social__link:hover, a.social__link:focus-visible { color: #fff; border-color: 
 .prose-legal a { color: #fff; text-decoration: underline; text-decoration-color: var(--red); text-decoration-thickness: 2px; text-underline-offset: 4px; }
 .prose-legal a:hover, .prose-legal a:focus-visible { color: var(--red); }
 .prose-legal .legal__contact { font-style: normal; padding: 18px 22px; border-left: 3px solid var(--red); background: var(--panel); color: var(--ice); }
+
+/* Contact: live GoHighLevel form (no card, no border, no placeholder styling) */
+.contact-form { max-width: 820px; scroll-margin-top: calc(var(--nav-h) + 24px); }
+.contact-form .embed__head { margin-bottom: 18px; }
+.contact-form .embed__slot { display: block; min-height: 0; padding: 0; border: 0; background: none; text-align: left; }
+.contact-form .embed__slot iframe { display: block; width: 100%; min-height: 640px; border: 0; border-radius: 0; background: transparent; }
+.anchor-alias { position: relative; top: calc(-1 * (var(--nav-h) + 24px)); display: block; height: 0; }

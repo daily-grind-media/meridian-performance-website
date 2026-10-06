@@ -74,42 +74,31 @@
 
   <section class="legal" aria-label="Contact options">
     <div class="wrap">
-      <div class="contact-grid">
-
-        <div class="embed reveal" id="message">
-          <div class="embed__head">
-            <h2 class="h3">Contact form</h2>
-            <span class="tech caption">Send a message</span>
-          </div>
-          <!--
-            GOHIGHLEVEL FORM EMBED
-            Paste the GoHighLevel form embed code inside .embed__slot below,
-            replacing the placeholder <div class="embed__placeholder">.
-          -->
-          <div class="embed__slot" data-ghl="form">
-            <div class="embed__placeholder">
-              <p>[GoHighLevel form placeholder]</p>
-              <small>The contact form embed will be placed here.</small>
-            </div>
-          </div>
+      <div class="contact-form" id="message">
+        <span id="book" class="anchor-alias" aria-hidden="true"></span>
+        <div class="embed__head">
+          <h2 class="h3">Contact form</h2>
+          <span class="tech caption">Send a message</span>
         </div>
-
-        <div class="embed reveal" data-delay="1" id="book">
-          <div class="embed__head">
-            <h2 class="h3">Book a consultation</h2>
-            <span class="tech caption">Pick a time</span>
-          </div>
-          <!--
-            GOHIGHLEVEL CALENDAR EMBED
-            Paste the GoHighLevel calendar embed code inside .embed__slot below,
-            replacing the placeholder <div class="embed__placeholder">.
-          -->
-          <div class="embed__slot" data-ghl="calendar">
-            <div class="embed__placeholder">
-              <p>[GoHighLevel calendar placeholder]</p>
-              <small>The consultation booking calendar will be placed here.</small>
-            </div>
-          </div>
+        <!-- GoHighLevel form: Meridian Performance Get Started (form ID 9jTg3IYO3oKaGdI26G8F) -->
+        <div class="embed__slot" data-ghl="form">
+          <iframe
+            src="https://api.leadconnectorhq.com/widget/form/9jTg3IYO3oKaGdI26G8F"
+            style="width:100%;height:100%;border:none;border-radius:0"
+            id="inline-9jTg3IYO3oKaGdI26G8F"
+            data-layout="{'id':'INLINE'}"
+            data-trigger-type="alwaysShow"
+            data-trigger-value=""
+            data-activation-type="alwaysActivated"
+            data-activation-value=""
+            data-deactivation-type="neverDeactivate"
+            data-deactivation-value=""
+            data-form-name="Meridian Performance Get Started"
+            data-height="AUTO"
+            data-layout-iframe-id="inline-9jTg3IYO3oKaGdI26G8F"
+            data-form-id="9jTg3IYO3oKaGdI26G8F"
+            title="Meridian Performance Get Started Form">
+          </iframe>
         </div>
       </div>
 
@@ -132,6 +121,18 @@
   </section>
 </main>
 
+<!-- LeadConnector embed script: sizes the form iframe to its content -->
+<script src="https://link.msgsndr.com/js/form_embed.js" defer></script>
+<script>
+  /* Drop the pre-load fallback height once LeadConnector sets the real height. */
+  (function () {
+    var f = document.getElementById("inline-9jTg3IYO3oKaGdI26G8F");
+    if (!f || !("MutationObserver" in window)) return;
+    new MutationObserver(function () {
+      if (/^\d+(\.\d+)?px$/.test(f.style.height) && parseFloat(f.style.height) > 150) f.style.minHeight = "0";
+    }).observe(f, { attributes: true, attributeFilter: ["style"] });
+  })();
+</script>
 <footer class="footer">
   <div class="wrap">
     <div class="footer__top">
