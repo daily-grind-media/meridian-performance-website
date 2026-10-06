@@ -1,0 +1,24 @@
+{
+  "_comment": "DEMO / PLACEHOLDER CONTENT. status 'demo' is only built with --preview and never appears in the production build. Delete this folder once real articles exist.",
+  "status": "demo",
+  "order": 94,
+  "featured": false,
+  "title": "Lifestyle article title placeholder",
+  "category": "lifestyle",
+  "deck": "",
+  "excerpt": "Placeholder excerpt. A one or two sentence summary of the article appears here to help readers decide what to read next.",
+  "date": null,
+  "author": "chance-dyck",
+  "hero": {
+    "src": "assets/img/blog/demo/demo-7.webp",
+    "thumb": "assets/img/blog/demo/demo-7-thumb.webp",
+    "alt": "Placeholder image",
+    "caption": "Hero image caption placeholder."
+  },
+  "body_file": "../demo-featured-article/body.html",
+  "seo": {
+    "title": "",
+    "description": "",
+    "og_image": ""
+  }
+}
